@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 100vh;
+    background:  linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80") center center fixed no-repeat;
+    background-size: cover;
+}
+
+header {
+    height: 10vh;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding-left: 10px;
+    font-family: 'Dancing Script', cursive;
+}
+ 
+.typewritter {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.intro {
+    margin-left: 4%;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.typing {
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+}
+
+.typing::after {
+    content: "";
+    position: absolute;
+    right: -5px;
+    width: 1px;
+    height: 90%;
+    border-right: 2px solid white;
+    animation: blink 0.5s infinite ease;
+}
+
+
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
